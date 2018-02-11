@@ -47,10 +47,10 @@
         <li><a href="http://youtrack.jetbrains.com/issues/VIM">Issue tracker</a>: feature requests and bug reports</li>
       </ul>
     ]]></description>
-  <version>SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <vendor>JetBrains</vendor>
 
-  <idea-version since-build="171.0"/>
+  <idea-version since-build="161.0"/>
 
   <!-- Mark the plugin as compatible with RubyMine and other products based on the IntelliJ platform -->
   <depends>com.intellij.modules.lang</depends>

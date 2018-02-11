@@ -1302,6 +1302,7 @@ public class MotionGroup {
 
   public static void scrollPositionIntoView(@NotNull Editor editor, @NotNull VisualPosition position,
                                              boolean scrollJump) {
+     editor.getScrollingModel().enableAnimation();
     final int line = position.line;
     final int column = position.column;
     final int topLine = EditorHelper.getVisualLineAtTopOfScreen(editor);

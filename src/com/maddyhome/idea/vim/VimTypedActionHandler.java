@@ -25,7 +25,7 @@ import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.editor.actionSystem.ActionPlan;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.actionSystem.TypedActionHandler;
-import com.intellij.openapi.editor.actionSystem.TypedActionHandlerEx;
+//import com.intellij.openapi.editor.actionSystem.TypedActionHandlerEx;
 import com.maddyhome.idea.vim.helper.EditorDataContext;
 import org.jetbrains.annotations.NotNull;
 

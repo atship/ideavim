@@ -453,6 +453,9 @@ public class SearchGroup {
   }
 
   private static boolean shouldIgnoreCase(@NotNull String pattern, boolean noSmartCase) {
+    if (true) {
+      return true;
+    }
     boolean sc = !noSmartCase && Options.getInstance().isSet("smartcase");
     boolean ic = Options.getInstance().isSet("ignorecase");
 
