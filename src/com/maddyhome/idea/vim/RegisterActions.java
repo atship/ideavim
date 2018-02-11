@@ -720,9 +720,11 @@ public class RegisterActions {
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_2, KeyEvent.CTRL_MASK)),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_AT, KeyEvent.CTRL_MASK))
     });
+    /*
     parser.registerAction(MappingMode.I, "VimInsertRegister", Command.Type.INSERT,
                           new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_R, KeyEvent.CTRL_MASK)),
                           Argument.Type.CHARACTER);
+                          */
     parser.registerAction(MappingMode.I, "VimInsertReplaceToggle", Command.Type.INSERT, Command.FLAG_SAVE_STROKE,
                           new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_INSERT, 0)));
     parser.registerAction(MappingMode.I, "VimInsertSingleCommand", Command.Type.INSERT,
