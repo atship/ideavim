@@ -654,12 +654,11 @@ public class RegisterActions {
     // Jump Actions
 
     parser.registerAction(MappingMode.N, "VimMotionJumpNext", Command.Type.OTHER_READONLY, new Shortcut[]{
-      new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_I, KeyEvent.CTRL_MASK)),
+      //new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_I, KeyEvent.CTRL_MASK)),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0))
     });
     parser.registerAction(MappingMode.N, "VimMotionJumpPrevious", Command.Type.OTHER_READONLY,
                           new Shortcut[] {
-                            new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_MASK)),
                             // TODO: <C-T> is a tag command similar to <C-O>, the tag stack is not implemented
                             new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_T, KeyEvent.CTRL_MASK))
                           });
@@ -694,7 +693,7 @@ public class RegisterActions {
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_KP_DOWN, 0))
     });
     parser.registerAction(MappingMode.I, "EditorTab", Command.Type.INSERT, Command.FLAG_SAVE_STROKE, new Shortcut[]{
-      new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_I, KeyEvent.CTRL_MASK)),
+      new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_P, KeyEvent.CTRL_MASK)),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_TAB, 0))
     });
     parser.registerAction(MappingMode.I, "EditorUp", Command.Type.INSERT, Command.FLAG_CLEAR_STROKES, new Shortcut[]{
@@ -727,9 +726,9 @@ public class RegisterActions {
                           */
     parser.registerAction(MappingMode.I, "VimInsertReplaceToggle", Command.Type.INSERT, Command.FLAG_SAVE_STROKE,
                           new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_INSERT, 0)));
-    parser.registerAction(MappingMode.I, "VimInsertSingleCommand", Command.Type.INSERT,
-                          Command.FLAG_CLEAR_STROKES | Command.FLAG_EXPECT_MORE,
-                          new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_MASK)));
+    //parser.registerAction(MappingMode.I, "VimInsertSingleCommand", Command.Type.INSERT,
+    //                      Command.FLAG_CLEAR_STROKES | Command.FLAG_EXPECT_MORE,
+    //                      new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_I, KeyEvent.CTRL_MASK)));
     parser.registerAction(MappingMode.I, "VimMotionFirstColumn", Command.Type.INSERT, Command.FLAG_SAVE_STROKE,
                           new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_HOME, 0)));
     parser.registerAction(MappingMode.I, "VimMotionGotoLineFirst", Command.Type.INSERT, Command.FLAG_CLEAR_STROKES,

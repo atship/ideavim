@@ -1,6 +1,6 @@
 <idea-plugin url="http://plugins.jetbrains.com/plugin/164">
   <name>IdeaVim</name>
-  <id>IdeaVIM</id>
+  <id>IdeaVim</id>
   <change-notes><![CDATA[
       <p>To be released:</p>
       <ul>
@@ -47,7 +47,7 @@
         <li><a href="http://youtrack.jetbrains.com/issues/VIM">Issue tracker</a>: feature requests and bug reports</li>
       </ul>
     ]]></description>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <vendor>JetBrains</vendor>
 
   <idea-version since-build="161.0"/>
