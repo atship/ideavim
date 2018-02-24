@@ -53,7 +53,7 @@ public class WindowOnlyAction extends VimCommandAction {
   @NotNull
   @Override
   public Set<List<KeyStroke>> getKeyStrokesSet() {
-    return parseKeysSet("<C-W>o", "<C-W><C-O>");
+    return parseKeysSet("<C-S-W>o", "<C-W><C-S-O>");
   }
 
   @NotNull

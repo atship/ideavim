@@ -54,7 +54,7 @@ public class InsertExitModeAction extends VimCommandAction {
   @NotNull
   @Override
   public Set<List<KeyStroke>> getKeyStrokesSet() {
-    return parseKeysSet("<C-[>", "<C-C>", "<Esc>", "<C-\\><C-N>");
+    return parseKeysSet("<C-[>", "<C-C>", "<Esc>");
   }
 
   @NotNull

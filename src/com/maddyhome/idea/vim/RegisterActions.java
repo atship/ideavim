@@ -181,7 +181,7 @@ public class RegisterActions {
     );
     parser.registerAction(MappingMode.NO, "VimResetMode", Command.Type.RESET, new Shortcut(new KeyStroke[]{
       KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SLASH, KeyEvent.CTRL_MASK),
-      KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_MASK)
+      //KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_MASK)
     }));
   }
 
@@ -228,7 +228,7 @@ public class RegisterActions {
     parser.registerAction(MappingMode.NVO, "VimMotionDown", Command.Type.MOTION, Command.FLAG_MOT_LINEWISE, new Shortcut[]{
       new Shortcut('j'),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_DOWN, 0)),
-      new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_MASK)),
+      //new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_MASK)),
     });
     parser.registerAction(MappingMode.NVO, "VimMotionDown", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE, new Shortcut[]{
       new Shortcut("gj"),
@@ -660,7 +660,7 @@ public class RegisterActions {
     parser.registerAction(MappingMode.N, "VimMotionJumpPrevious", Command.Type.OTHER_READONLY,
                           new Shortcut[] {
                             // TODO: <C-T> is a tag command similar to <C-O>, the tag stack is not implemented
-                            new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_T, KeyEvent.CTRL_MASK))
+                            //new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_T, KeyEvent.CTRL_MASK))
                           });
 
     parser.registerAction(MappingMode.N, "VimFileGetAscii", Command.Type.OTHER_READONLY,
