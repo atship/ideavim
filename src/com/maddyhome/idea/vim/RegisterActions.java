@@ -211,10 +211,10 @@ public class RegisterActions {
     // TODO - add zj
     // TODO - add zk
 
-    parser.registerAction(MappingMode.NVO, "VimMotionNextTab", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
-                          new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_L, KeyEvent.SHIFT_MASK)));
-    parser.registerAction(MappingMode.NVO, "VimMotionPreviousTab", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
-                          new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_H, KeyEvent.SHIFT_MASK)));
+    parser.registerAction(MappingMode.NVO, "VimMotionNextTab", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE,
+                          new Shortcut('L'));
+    parser.registerAction(MappingMode.NVO, "VimMotionPreviousTab", Command.Type.MOTION, Command.FLAG_MOT_EXCLUSIVE,
+                          new Shortcut('H'));
     parser.registerAction(MappingMode.NVO, "VimMotionCamelEndLeft", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
                           new Shortcut("]b"));
     parser.registerAction(MappingMode.NVO, "VimMotionCamelEndRight", Command.Type.MOTION, Command.FLAG_MOT_INCLUSIVE,
@@ -621,7 +621,7 @@ public class RegisterActions {
     parser.registerAction(MappingMode.N, "QuickJavaDoc", Command.Type.OTHER_READONLY,
                           new Shortcut('K'));
     parser.registerAction(MappingMode.N, "VimRedo", Command.Type.OTHER_WRITABLE,
-                          new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_U, KeyEvent.SHIFT_MASK)));
+                          new Shortcut('U'));
     parser.registerAction(MappingMode.N, "VimUndo", Command.Type.OTHER_WRITABLE, new Shortcut[]{
       new Shortcut('u'),
       new Shortcut(KeyStroke.getKeyStroke(KeyEvent.VK_UNDO, 0))
