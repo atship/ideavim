@@ -33,7 +33,7 @@ public class DigraphSequence {
 
   public static boolean isDigraphStart(@NotNull KeyStroke key) {
     if ((key.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
-      if (key.getKeyCode() == KeyEvent.VK_K || key.getKeyCode() == KeyEvent.VK_V || key.getKeyCode() == KeyEvent.VK_Q) {
+      if (key.getKeyCode() == KeyEvent.VK_K /*|| key.getKeyCode() == KeyEvent.VK_V*/ || key.getKeyCode() == KeyEvent.VK_Q) {
         return true;
       }
     }
@@ -51,7 +51,7 @@ public class DigraphSequence {
           digraphState = DIG_STATE_DIG_ONE;
           return DigraphResult.OK;
         }
-        else if ((key.getKeyCode() == KeyEvent.VK_V || key.getKeyCode() == KeyEvent.VK_Q) &&
+        else if ((/*key.getKeyCode() == KeyEvent.VK_V || */key.getKeyCode() == KeyEvent.VK_Q) &&
                  (key.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
           logger.debug("found Ctrl-V");
           digraphState = DIG_STATE_CODE_START;
